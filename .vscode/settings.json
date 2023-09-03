@@ -1,0 +1,4 @@
+{
+  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: master]${separator}[Branch: main]",
+  "cSpell.enabled": false
+}
