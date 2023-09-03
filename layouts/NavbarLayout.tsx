@@ -32,7 +32,7 @@ const NavbarLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
       <Flex
         justifyContent={{ base: "normal", sm: "center" }}
         px={2}
-        maxW={"1400"}
+        /* maxW={"1400"} */
         minH={"100vh"}
       >
         {children}

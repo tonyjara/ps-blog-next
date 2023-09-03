@@ -26,16 +26,11 @@ export default function Post(props: { post: IPost; allPosts: IPost[] }) {
 
   return (
     <Box
-      maxW={{
-        /* base: "300px", */
-        /* sm: "500px", */
-        /* md: "600px", */
-        /* lg: "800px", */
-        xl: "1000px",
-      }}
+      maxW={"1000px"}
       /* display={"flex"} */
       /* flexDirection={"column"} */
       /* alignItems={"center"} */
+      mb={"20px"}
     >
       <MetaTagsComponent
         title={post.title}

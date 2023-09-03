@@ -1,4 +1,4 @@
 {
-  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: master]${separator}[Branch: main]",
+  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: master]${separator}[Branch: master]",
   "cSpell.enabled": false
 }

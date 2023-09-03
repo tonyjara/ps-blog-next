@@ -5,8 +5,16 @@ import { GetStaticProps } from "next";
 import { IPost } from "../interfaces/post";
 import { getAllPosts } from "../lib/api";
 import MetaTagsComponent from "../components/Meta/MetaTagsComponent";
-import { Box, Flex, Heading, Text, useColorMode } from "@chakra-ui/react";
+import {
+  Link as ChakraLink,
+  Box,
+  Flex,
+  Heading,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import { leafColors } from "../styles/theme";
+import Link from "next/link";
 
 const BlogHome = (props: { allPosts: IPost[] }) => {
   const allPosts = props.allPosts.sort(
@@ -20,7 +28,7 @@ const BlogHome = (props: { allPosts: IPost[] }) => {
       ? leafColors.accentDark
       : leafColors.accentLight;
   return (
-    <Box w="100%" mt={"10px"} px="10px">
+    <Box w="100%" mt={"10px"} px="10px" maxW={"1000px"}>
       <MetaTagsComponent
         title="Blogs list"
         description="Podcast solutions is a platform to host and manage podcasts. We offer audio transcription, AI content generation and much more."
@@ -34,7 +42,18 @@ const BlogHome = (props: { allPosts: IPost[] }) => {
           The Podcast Solution&apos;s Blog
         </Heading>
         <Text fontSize={{ base: "md", md: "2xl" }}>
-          Let&apos;s take your podcast to the next level!
+          Take your podcast to the next level with{" "}
+          <ChakraLink
+            as={Link}
+            href="https://podcastsolutions.org"
+            target="_blank"
+            rel="noreferrer"
+            fontWeight={"bold"}
+            textDecoration={"underline"}
+          >
+            Podcast Solutions
+          </ChakraLink>
+          !
         </Text>
       </Flex>
       {allPosts.map((post) => (
