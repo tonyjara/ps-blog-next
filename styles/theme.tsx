@@ -12,7 +12,7 @@ export const leafColors = {
 };
 
 const theme = extendTheme({
-  initialColorMode: "light",
+  initialColorMode: "dark",
   fonts: {
     heading: "var(--font-inter)",
     /* heading: "var(--font-spartan)", */
